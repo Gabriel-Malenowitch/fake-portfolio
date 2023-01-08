@@ -1,0 +1,103 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.avatar {
+  width: 160px;
+  border-radius: 70px;
+  animation: crazyAvatar 2s linear infinite;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 32px 16px 32px;
+}
+
+.card {
+  background-color:  rgb(224, 227, 230);
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.card-small {
+  padding: 32px;
+  border-radius: 8px;
+  background-color: rgb(224, 227, 230);
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+.crazyRotation {
+  animation: crazyRotation 2s alternate infinite;
+}
+
+a {
+  animation: anchorAnimation 1s alternate infinite;
+  transition: all 0.4s;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+}
+a:hover {
+  font-size: 64px;
+  transition: all 0.4s ease-in-out;
+}
+a::after, a::before {
+  margin: 0px 8px;
+}
+a::after {
+  content: '<';
+  animation: afterAnchor 1s alternate infinite;
+}
+a::before {
+  content: '>';
+  animation: beforeAnchor 1s alternate infinite;
+}
+
+@keyframes beforeAnchor {
+  0%{
+    margin-right: 8px;
+  }
+  100% {
+    margin-right: 16px;
+  }
+}
+@keyframes afterAnchor {
+  0%{
+    margin-left: 8px;
+  }
+  100% {
+    margin-left: 16px;
+  }
+}
+
+@keyframes crazyAvatar {
+  0% {
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+    border-radius: 70px;
+  }
+  100% {
+    transform: rotateX(360deg) rotateZ(360deg) rotateY(180deg);
+    border-radius: 200px;
+  }
+}
+
+@keyframes crazyRotation {
+  0% {
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+    border-radius: 70px;
+  }
+  100% {
+    transform: rotateX(360deg) rotateZ(360deg) rotateY(180deg);
+    border-radius: 200px;
+  }
+}
+
