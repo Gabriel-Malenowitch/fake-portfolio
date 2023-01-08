@@ -1,7 +1,7 @@
 export const Body = () => (
     <>
         <div className="card-small">
-            <p>Meu nome é Gabriel Botelo Malenowitch, e bem vindo ao meu pequenino site!</p>
+            <p>Meu nome é Gabriel Botelho Malenowitch, e bem vindo ao meu pequenino site!</p>
             <br />
             <p>Aqui você vai encontrar um pequeno resumo sobre mim, alguns dados, alguns projetos, e algumas fotos para dar personalidade ao site. Espero que o design te ajude a ter uma experiência imersiva 💚</p>
             <br />
