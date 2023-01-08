@@ -2,7 +2,7 @@ import { useRandomBackground } from "../../hooks/use-random-background";
 
 export const Header = () => (
     <header style={{ color: useRandomBackground({ time: 500 }) }}>
-        <img src="./src/assets/avatar.png" alt="Avatar" className="avatar"/>
+        <img src="https://github.com/Gabriel-Malenowitch.png" alt="Avatar" className="avatar"/>
         <div className="card">
             <h1 style={{ color: useRandomBackground({ time: 1000 }) }}>
             Hello world! <div className="crazyRotation">👋</div>
